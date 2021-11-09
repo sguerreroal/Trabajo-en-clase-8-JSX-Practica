@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+    <script type="text/babel">
+    <br></br>
+    const titulo1=<h1> <strong> Cartelera de vuelos - Aeropuerto el mirador</strong></h1>
+    
+    const titulo2=<h2><br></br><strong>Llegadas</strong>  </h2>
+   
+    const tabla=<table  className="table">    
+  <thead>
+    <br></br>
+    <tr >
+      <th scope="col">Aerolinea</th>
+      <th scope="col">Nro. vuelo</th>
+      <th scope="col">Estatus</th>
+      <th scope="col">Hora Estipulada</th>
+      <th scope="col">Puerta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>        
+      <td>AIRLAN</td>
+      <td>355</td>
+      <td>ATERRIZO</td>
+      <td>2:45PM</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>VIAJAR</td>
+      <td>556</td>
+      <td>RETARDADO</td>
+      <td>2:35PM</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>AEROVUELO</td>
+      <td>1234</td>
+      <td>EN VUELO</td>
+      <td>3:45PM</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+const titulo3=<h2><strong>Salidas</strong></h2>
+    const tabla2=<table className="table">
+  <thead>
+    <tr>
+      <th scope="col">Aerolinea</th>
+      <th scope="col">Nro. vuelo</th>
+      <th scope="col">Estatus</th>
+      <th scope="col">Hora Estipulada</th>
+      <th scope="col">Puerta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AIRLAN</td>
+      <td>355</td>
+      <td>EMBARCANDO</td>
+      <td>2:15 PM</td>
+      <td>1</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+const element=(
+    <div>
+        {titulo1}
+        {titulo2}
+        {tabla}
+        {titulo3}
+        {tabla2}
+        </div>
+)
+
+    ReactDOM.render(element,document.getElementById("root"))
+    </script>
+    
+    
+</body>
+</html>

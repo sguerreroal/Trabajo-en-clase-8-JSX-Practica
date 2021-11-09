@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">   
+    <title>Document</title>
+</head>
+<body >
+  <div id="root"> </div>
+      <!-- Cargar React. -->
+  <!-- Nota: cuando se despliegue, reemplazar "development.js" con "production.min.js". -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <!-- Cargamos nuestro componente de React. -->
+  <!-- <script src="like_button.js"></script> -->
+  <script type="text/babel" >
+    const data = {
+  title1: "Pagina Oficial Juan Tuesta ",
+  parrafo: "Bienvenido a mi pagina personal. Soy un alumno de la Universidad Deusto y esta es mi pagina inicial, con la lista de mis enlaces favortios y otra informacion de interes",
+  enlace: "Enlaces Favoritos: ",
+  enlace2: "Paginas Personales ",
+  enlace3: "Paginas de Referencia ",
+  enlace4: "Portales ",
+  enlace5: "Publicaciones ",
+  fin: "Juan Tuesta, Universidad de la Universidad de Deusto Marzo 2000",
+  ingredientes: ["4 berenjenas", "sal", "pimienta", "4 cucharas de arina", "aceite"],
+  preparacion:["Lavar berenjenas", "Cortar en rodajas", "Espolvorear con sal", "Dejar que suelten el agua durante 30 min", "Enharizarlas, poner a freir durante 5 min aceite bien caliente"],
+  
+
+}
+
+
+
+const element = (
+  <div>
+    <h1>{data.title1}</h1>
+    <p> {data.parrafo} </p>
+    <h2>{data.enlace}</h2>
+    <ol>
+      <li> <a href="https://es.strikingly.com/"> Paginas Personales </a></li>
+      <li>Paginas de Referencia</li>
+      <li>Portales</li>
+      <li>Publicaciones</li>
+</ol>
+  <hr/>  
+    
+    <h2>{data.enlace2}</h2>
+    <ol>
+      <li>Documentalistas</li>
+      <ul> <li>Charkes F. Golfarb</li> <li>Lou Burnard</li> <li>Tim Berners-Lee</li> </ul>
+      <li>Historiadores</li>
+      <li>Linguisticas</li>
+      <li>Traductores</li>
+</ol>
+  <hr/>
+
+  <h2>{data.enlace3}</h2>
+    <ol>
+      <li>Bibliotecas Universitarias</li>
+      <li>Centros de Documentacion</li>
+      <li>Museos de Arte Contemporaneo</li>
+      <li>Medios de comunicacion</li>
+</ol>
+  <hr/>
+
+  <h2>{data.enlace4}</h2>
+    <ol>
+      <li>Inicia</li>
+      <li>Telepolis</li>
+      <li>Ciudades</li>
+      <li>Terra</li>
+</ol>
+  <hr/>
+
+  <h2>{data.enlace5}</h2>
+    <ol>
+      <li>Ciberp@is</li>
+      <li>Diario Tecnologias de la Información</li>
+      <li>The Standard</li>
+      <li>Infoworld</li>
+      <li>Wired</li>
+</ol>
+  <hr/>
+
+    <i>{data.fin} </i>
+
+  </div>
+);
+
+// Renderiamos o pintamos
+ReactDOM.render(
+  element,// estructura jsx para pintar
+  document.getElementById('root')// elemento donde se pintara
+);
+  </script>
+</body>
+</html>

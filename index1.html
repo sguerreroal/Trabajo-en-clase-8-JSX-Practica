@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">   
+    <title>Document</title>
+</head>
+<body >
+  <div id="root"> </div>
+      <!-- Cargar React. -->
+  <!-- Nota: cuando se despliegue, reemplazar "development.js" con "production.min.js". -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <!-- Cargamos nuestro componente de React. -->
+  <!-- <script src="like_button.js"></script> -->
+  <script type="text/babel" >
+    const data = {
+  title1: "Berenjenas fritas",
+  comensales: "4 Personas",
+  tiempo_preparacion: "10 minutos",
+  tiempo_coccion: "12 minutos",
+  ingredientes: ["4 berenjenas", "sal", "pimienta", "4 cucharas de arina", "aceite"],
+  preparacion:["Lavar berenjenas", "Cortar en rodajas", "Espolvorear con sal", "Dejar que suelten el agua durante 30 min", "Enharizarlas, poner a freir durante 5 min aceite bien caliente"],
+  
+
+}
+
+// 1.
+const title_x = <h2>{data.title1}</h2>;
+const subtitle_x = <p> Comensales: {data.comensales }</p>;
+const tiempo_preparacion = <p> tiempo de preparacion: {data.tiempo_preparacion}</p>;
+const tiempo_coccion = <p> tiempo de coccion: {data.tiempo_coccion}</p>;
+
+const element = (
+  <div>
+    <h1>Plato de la Semana</h1>
+    
+    {title_x}
+    
+    {subtitle_x}    
+      
+    {tiempo_preparacion}  
+    
+    {tiempo_coccion}
+    
+    <p> Ingredientes: </p>
+    
+    <p> {data.ingredientes[0]} </p>
+    <p> {data.ingredientes[1]} </p>
+    <p> {data.ingredientes[2]} </p>    
+    <p> {data.ingredientes[3]} y {data.ingredientes[4]} </p>
+    
+    <p> Preparacion: </p>
+    
+    <p> {data.preparacion[0]} </p>
+    <p> {data.preparacion[1]} </p>
+    <p> {data.preparacion[2]} </p>    
+    <p> {data.preparacion[3]} </p>
+    <p> {data.preparacion[4]} </p>
+
+  </div>
+);
+
+
+// Renderiamos o pintamos
+ReactDOM.render(
+  element,// estructura jsx para pintar
+  document.getElementById('root')// elemento donde se pintara
+);
+  </script>
+</body>
+</html>

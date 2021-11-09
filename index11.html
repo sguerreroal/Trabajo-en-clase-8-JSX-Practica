@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+    const t1=<h1>Registro en nuestra tienda</h1>
+const formulario=<form>
+    <label>Nombre usuario <br></br></label>
+    <input placeholder="Ej: Juan"></input>
+<br/><br/>
+    <label>Email<br></br></label>
+    <input placeholder="Ej: juan@gmail.com"></input>
+    <br/>
+    <br/>
+    <label>Edad<br></br></label>
+    <input placeholder="Ej: 21"></input>
+    <br/>
+    <br/>
+    <label>Genero<br></br></label>
+    <select name="select" >
+        <option>Masculino</option>
+        <option>Femenino</option>
+        </select>
+        <br/>
+        <br/>
+    <label>Recomendado por: <br></br></label>
+    <select name="select" >
+        <option>Google</option>
+        <option>Opera</option>
+        <option>Internet Explorer</option>
+        <option>FireFox</option>
+        <option>Otro</option>
+        </select>
+    <br/><br/>
+    <label>Comentarios <br></br></label>
+    <textarea  rows="10" cols="40"></textarea>
+    <br/>
+    <br/>
+    <label>Acepto terminos y condiciones <br></br></label>
+    <input type="checkbox"></input>
+    <br/>
+    <br/>
+    <button type="submint">Registrar</button>
+
+    </form>
+const element=(
+    <div>
+        {t1}
+        {formulario}
+        </div>
+)
+    
+    ReactDOM.render(element,document.getElementById("root"))
+    </script>
+    
+    
+</body>
+</html>

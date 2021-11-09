@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+
+
+        const titulo =
+            <div className="container ">
+                <div className="row">
+                    <div class="col">
+                        <img src="https://media.gettyimages.com/vectors/live-indie-band-vector-id165048719?s=612x612" width="15%"></img>
+                    </div>
+                    <div class="col">
+                        <p><strong><h1>Tu Concierto</h1></strong></p>
+                    </div>
+                </div>
+            </div>            
+
+        const parrafo = <p>Bienvenido a este blog de conciertos...</p>;
+
+        const img = <img src="https://d7lju56vlbdri.cloudfront.net/var/ezwebin_site/storage/images/_aliases/img_1col/reportajes/cuando-volveremos-a-ir-a-conciertos-con-normalidad/8867610-2-esl-MX/Cuando-volveremos-a-ir-a-conciertos-con-normalidad.png" width="50%"></img>
+        const element = (
+            <div>
+                {titulo}
+                {parrafo}
+{img}
+            </div>
+        )
+
+        ReactDOM.render(element, document.getElementById("root"))
+    </script>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

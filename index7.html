@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        const titulos1 = <h1>Destinos Turisticos</h1>;
+        const titulos2 = <h2>América</h2>;
+        const lista =
+            <ol>
+                <li> <b>Argentina </b>
+                    <ol>
+                        <li>Buenos Aires</li>
+                        <li>Bariloche</li>
+                    </ol>
+                </li>
+                <li><b> Brasil</b> <ol> 
+                    <li>Rio de Janeiro</li>
+                    <li>Brasilia</li>
+                </ol></li>
+                <li><b>Chile</b><ol>
+                    <li>Santiago</li>
+                    <li>Valparaiso</li>
+                </ol></li>
+                <li><b>Colombia</b><ol>
+                    <li>Bogota</li>
+                    <li>Cartagena de Indias</li>
+                </ol></li>
+                <li><b>Estados Unidos</b><ol>
+                    <li>New York</li>
+                    <li>San Francisco</li>
+                </ol></li>
+                <li><b>Mexico</b><ol>
+                    <li>Cancun</li>
+                    <li>Acapulco</li>
+                </ol></li>
+                <li><b>Peru</b><ol>
+                    <li>Lima</li>
+                    <li>Cusco</li>
+                </ol></li>
+                <li><b>Venezuela</b><ol>
+                    <li>Margarita</li>
+                    <li>Mérida</li>
+                </ol></li>
+            </ol>;
+        const element = (
+            <div>
+                {titulos1}
+                {titulos2}
+                {lista}
+            </div>
+        )
+        ReactDOM.render(element, document.getElementById("root"))
+    </script>
+
+    
+</body>
+
+</html>
